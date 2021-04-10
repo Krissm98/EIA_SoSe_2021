@@ -26,11 +26,13 @@ h2 {font-family: sans-serif;
 .Logos{
     width:fit-content;
     padding:20px;
-    opacity: 65%;
-    margin:-40px;
+    margin:-40px 270px;
+    
 }
+.logosEinzeln{
+    opacity:65%;}
 
-.Logos:hover {opacity:100%;}
+.logosEinzeln:hover {opacity:100%;}
 
 
 
@@ -56,7 +58,7 @@ video {
     background-color:gray;
     width:fit-content;
     height:30px;
-    padding:5px 5px 5px 100px;
+    padding:5px 5px 5px 5px;
     position:fixed;                         
     top:0;
     margin-left:600px;
@@ -88,6 +90,9 @@ video {
 #datenschutz {
     color:gray;
     font-style:italic;}
+
+.sizeinput {width:500px;}
+p {font-family:sans-serif;}
 
 
 
