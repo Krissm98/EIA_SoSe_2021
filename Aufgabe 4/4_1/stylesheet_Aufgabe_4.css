@@ -21,13 +21,13 @@ body {background-image: url(../Background/bg.png);}
   
 }
 .busch{
-    margin-left:-95px;
+    margin-left:0px;
    
 }
 #buschdiv {
     width:fit-content;
     margin-top: -410px;
-    margin-left: 1ßpx;
-    position:sticky;
+    margin-left: -100px;
+    position:absolute;
     
 }
