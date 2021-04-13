@@ -1,0 +1,35 @@
+body {background-image: url(../Background/bgs.png);}
+.Karte1{
+    background-image: url(../Background/wrapperbg.png);
+    height:400px;
+    width:600px;
+    margin:0 auto;
+    margin-top: 150px;
+}
+#mc {
+    color:white;
+    padding:40px;
+    margin-left: 55px;
+}
+.textinkarte {
+    color:white;
+    padding-left: 50px;
+    margin-top:-20px ;
+}
+.pinguin{
+    margin-left:460px;
+    margin-top: -60px;
+    position:absolute;
+  
+}
+.shell{
+    margin-left:0px;
+   
+}
+#shelldiv {
+    width:fit-content;
+    margin-top: -5px;
+    margin-left: -70px;
+    position:absolute;
+    
+}
