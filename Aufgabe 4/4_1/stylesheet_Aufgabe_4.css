@@ -1,0 +1,33 @@
+body {background-image: url(../Background/bg.png);}
+.Karte1{
+    background-image: url(../Background/background_no_borders.png);
+    height:366px;
+    width:564px;
+    margin:0 auto;
+    margin-top: 150px;
+}
+#mc {
+    color:white;
+    padding:40px;
+}
+.textinkarte {
+    color:white;
+    padding-left: 40px;
+}
+.pinguin{
+    margin-left:460px;
+    margin-top: -140px;
+    position:absolute;
+  
+}
+.busch{
+    margin-left:-95px;
+   
+}
+#buschdiv {
+    width:fit-content;
+    margin-top: -410px;
+    margin-left: 1ßpx;
+    position:sticky;
+    
+}
