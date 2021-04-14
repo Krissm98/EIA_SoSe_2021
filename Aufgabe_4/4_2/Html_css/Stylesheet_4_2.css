@@ -1,0 +1,60 @@
+body {
+    background-image: url(../pics_4_2/bg.png);
+}
+
+.karte42 {
+    background-image: url(../pics_4_2/wrapperbg_4_2.png);
+    position: relative;
+    margin: 0 auto;
+    top: 150px;
+    height: 400px;
+    width: 600px;
+}
+
+h1 {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    top: 30px;
+    left: 80px;
+    font-family:sans-serif;
+}
+
+.Muschel1 {
+    position: absolute;
+    top: 290px;
+    left: 65px;
+    width: 70px;
+    height: 63.5px;
+}
+
+.Muschel2 {
+    position: absolute;
+    top: 230px;
+    left: 340px;
+    width: 70px;
+    height: 63.5px;
+}
+
+.M_op_0:hover {
+    opacity: 0%;
+}
+
+.Muschel3 {
+    position: absolute;
+    top: 180px;
+    left: 190px;
+    width: 70px;
+    height: 63.5px;
+}
+
+.Muschel1:hover {
+    background-image: url(../pics_4_2/muschel_perle.png);
+}
+
+.Muschel2:hover {
+    background-image: url(../pics_4_2/muschel_perle.png);
+}
+.Muschel3:hover {
+    background-image: url(../pics_4_2/muschel_perle.png);
+}
