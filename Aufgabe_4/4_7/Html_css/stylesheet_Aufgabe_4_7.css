@@ -1,0 +1,41 @@
+body {
+    background-image: url(../pics/bg.png);
+}
+
+
+
+
+
+
+
+
+.karte {
+    background-image: url(../pics/wrapperbg2.png);
+    position:relative;
+    margin:0 auto;
+    top:150px;
+    height:400px;
+    width:600px;
+
+    
+    
+}
+
+.banderole{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    z-index:10;
+ }
+
+ .yt_video {
+     position:absolute;
+     width: 510px;
+     height:265px;
+     left:50%;
+     margin-left: -255px;
+     top:50%;
+     margin-top:-132.5px;
+     z-index: 0;
+     
+ }
