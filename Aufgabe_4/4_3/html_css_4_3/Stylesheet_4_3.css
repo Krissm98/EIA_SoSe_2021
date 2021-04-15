@@ -1,0 +1,48 @@
+
+@font-face{
+    src:url(../font/Jellyka\ Delicious\ Cake.ttf);
+    font-family: Jellyka;
+
+}
+body {
+    background-image: url(../pics/bg_4_3.png);
+}
+
+.karte3 {
+    background-image: url(../pics/wrapperbg_4_3.png);
+    position:relative;
+    margin:0 auto;
+    top:150px;
+    height:400px;
+    width:600px;
+}
+
+.banderole{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    z-index:10;
+ }
+h1 {
+    position: relative;
+    color:white;
+    font-size: 30px;
+    top:55px;
+    left:75px;
+    font-family: Jellyka;}
+h2 {
+    position: relative;
+    color:white;
+    font-size: 15px;
+    top:75px;
+    left:75px;
+    font-family: Jellyka;}
+
+p {
+    position: relative;
+    color:white;
+    font-size: 15px;
+    top:95px;
+    left:75px;
+    font-family: Jellyka;}
+
