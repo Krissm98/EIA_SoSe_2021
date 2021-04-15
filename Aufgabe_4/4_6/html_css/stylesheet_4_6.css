@@ -38,6 +38,12 @@ body {
     top:40px;
     left:470px;
 }
+.Stern{
+    position:absolute;
+    bottom:0;
+    left:467px;
+    margin-bottom: 230px;
+}
 h1 {
     position:absolute;
     color:white;
@@ -53,3 +59,4 @@ p {
     font-family:inherit;
 
 }
+
