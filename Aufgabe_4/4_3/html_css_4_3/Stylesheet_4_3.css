@@ -1,9 +1,5 @@
 
-@font-face{
-    src:url(../font/Jellyka\ Delicious\ Cake.ttf);
-    font-family: Jellyka;
 
-}
 body {
     background-image: url(../pics/bg_4_3.png);
 }
@@ -29,14 +25,14 @@ h1 {
     font-size: 30px;
     top:55px;
     left:75px;
-    font-family: Jellyka;}
+    font-family: jellyka_delicious_cakeregular;}
 h2 {
     position: relative;
     color:white;
     font-size: 15px;
     top:75px;
     left:75px;
-    font-family: Jellyka;}
+    font-family: jellyka_delicious_cakeregular;}
 
 p {
     position: relative;
@@ -44,5 +40,5 @@ p {
     font-size: 15px;
     top:95px;
     left:75px;
-    font-family: Jellyka;}
+    font-family: jellyka_delicious_cakeregular;}
 
