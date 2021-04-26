@@ -34,7 +34,6 @@ var Europe2008_2018: number = (europe_2018 - europe_2008) / europe_2008 *100;
 var Northamerica2008_2018: number = (northamerica_2018 - northamerica_2008) / northamerica_2008 *100;
 var Southamerica2008_2018: number = (southamerica_2018 - southamerica_2008) / southamerica_2008 *100;
 
-
 var Africa_2018_2008_vgl: number = (africa_2018 - africa_2008);
 var Asia_2018_2008_vgl: number = (asia_2018 - asia_2008);
 var Australia_2018_2008_vgl: number = (australia_2018 - australia_2008);
