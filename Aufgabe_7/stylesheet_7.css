@@ -14,6 +14,7 @@
     height:150px;
     background-color: rgb(38, 105, 230);
     border-radius: 10px;
+    cursor: pointer;
     
 }
 .button1:hover{
@@ -27,6 +28,7 @@
     margin-left: 155px;
     background-color: rgb(38, 105, 230);
     border-radius: 10px;
+    cursor: pointer;
 }
 .button2:hover{
     transform: scale(1.02);
@@ -39,6 +41,7 @@
     margin-left:310px;
     background-color: rgb(38, 105, 230);
     border-radius: 10px;
+    cursor: pointer;
 }
 .button3:hover{
     transform: scale(1.02);
@@ -51,6 +54,7 @@
     margin-top: 155px;
     background-color:rgb(255, 2, 129);
     border-radius: 10px;
+    cursor: pointer;
     
     
 }
@@ -66,6 +70,7 @@
     margin-top:155px;
     background-color:rgb(255, 2, 129);
     border-radius: 10px;
+    cursor: pointer;
 }
 .button5:hover{
     transform: scale(1.02);
@@ -79,6 +84,7 @@
     margin-top: 155px;
     background-color:rgb(255, 2, 129);
     border-radius: 10px;
+    cursor: pointer;
 }
 .button6:hover{
     transform: scale(1.02);
@@ -91,6 +97,7 @@
     margin-top: 310px;
     background-color:rgb(255, 2, 129);
     border-radius: 10px;
+    cursor: pointer;
 }
 .button7:hover{
     transform: scale(1.02);
@@ -104,6 +111,7 @@
     margin-top: 310px;
     background-color: rgb(255, 136, 0);
     border-radius: 10px;
+    cursor: pointer;
 }
 .button8:hover{
     transform: scale(1.02);
@@ -117,6 +125,7 @@
     margin-top: 310px;
     background-color: rgb(255, 136, 0);
     border-radius: 10px;
+    cursor: pointer;
 }
 .button9:hover{
     transform: scale(1.02);
@@ -128,6 +137,7 @@
     bottom:-170px;
     left: 50%;
     margin-left:-75px;
+    cursor: pointer;
     
 }
 
