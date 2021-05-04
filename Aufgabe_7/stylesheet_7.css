@@ -1,0 +1,138 @@
+.drumMashine{
+    position: relative;
+    margin: 0 auto;
+    height: 460px;
+    width: 460px;
+    background-color: black;
+    top:20px;
+    
+
+}
+.button1{
+    position:absolute;
+    width:150px;
+    height:150px;
+    background-color: rgb(38, 105, 230);
+    border-radius: 10px;
+    
+}
+.button1:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 101, 253, 0.493);
+}
+.button2{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-left: 155px;
+    background-color: rgb(38, 105, 230);
+    border-radius: 10px;
+}
+.button2:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 101, 253, 0.493);
+}
+.button3{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-left:310px;
+    background-color: rgb(38, 105, 230);
+    border-radius: 10px;
+}
+.button3:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 101, 253, 0.493);
+}
+.button4{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-top: 155px;
+    background-color:rgb(255, 2, 129);
+    border-radius: 10px;
+    
+    
+}
+.button4:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(255, 2, 129, 0.534);
+}
+.button5{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-left: 155px;
+    margin-top:155px;
+    background-color:rgb(255, 2, 129);
+    border-radius: 10px;
+}
+.button5:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(255, 2, 129, 0.534);
+}
+.button6{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-left:310px;
+    margin-top: 155px;
+    background-color:rgb(255, 2, 129);
+    border-radius: 10px;
+}
+.button6:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(255, 2, 129, 0.534);
+}
+.button7{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-top: 310px;
+    background-color:rgb(255, 2, 129);
+    border-radius: 10px;
+}
+.button7:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(255, 2, 129, 0.534);
+}
+.button8{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-left: 155px;
+    margin-top: 310px;
+    background-color: rgb(255, 136, 0);
+    border-radius: 10px;
+}
+.button8:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(255, 136, 0, 0.534);
+}
+.button9{
+    position:absolute;
+    width:150px;
+    height:150px;
+    margin-left:310px;
+    margin-top: 310px;
+    background-color: rgb(255, 136, 0);
+    border-radius: 10px;
+}
+.button9:hover{
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(255, 136, 0, 0.534);
+}
+
+.playButton{
+    position:absolute;
+    bottom:-170px;
+    left: 50%;
+    margin-left:-75px;
+    
+}
+
+.playButton:hover{
+    transform: scale(1.10);
+    
+
+}
