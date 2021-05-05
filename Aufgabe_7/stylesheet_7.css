@@ -12,7 +12,7 @@
     position:absolute;
     width:150px;
     height:150px;
-    background-color: rgb(38, 105, 230);
+    background-color:		#2669e6;
     border-radius: 10px;
     cursor: pointer;
     
@@ -29,7 +29,7 @@
     width:150px;
     height:150px;
     margin-left: 155px;
-    background-color: rgb(38, 105, 230);
+    background-color: 	#2669e6;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -45,7 +45,7 @@
     width:150px;
     height:150px;
     margin-left:310px;
-    background-color: rgb(38, 105, 230);
+    background-color: 	#2669e6;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -61,7 +61,7 @@
     width:150px;
     height:150px;
     margin-top: 155px;
-    background-color:rgb(255, 2, 129);
+    background-color:	#ff0281;
     border-radius: 10px;
     cursor: pointer;
     
@@ -80,7 +80,7 @@
     height:150px;
     margin-left: 155px;
     margin-top:155px;
-    background-color:rgb(255, 2, 129);
+    background-color:	#ff0281;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -97,7 +97,7 @@
     height:150px;
     margin-left:310px;
     margin-top: 155px;
-    background-color:rgb(255, 2, 129);
+    background-color:	#ff0281;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -113,7 +113,7 @@
     width:150px;
     height:150px;
     margin-top: 310px;
-    background-color:rgb(255, 2, 129);
+    background-color:	#ff0281;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -130,7 +130,7 @@
     height:150px;
     margin-left: 155px;
     margin-top: 310px;
-    background-color: rgb(255, 136, 0);
+    background-color:#ff8800;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -147,7 +147,7 @@
     height:150px;
     margin-left:310px;
     margin-top: 310px;
-    background-color: rgb(255, 136, 0);
+    background-color:#ff8800;
     border-radius: 10px;
     cursor: pointer;
 }
