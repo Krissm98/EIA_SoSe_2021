@@ -27,6 +27,36 @@ var Aufgabe_7;
         }
         var drum_Machine = [alleSamples[0], alleSamples[1], alleSamples[2], alleSamples[1]];
         var drum_Playing = 0;
+        document.addEventListener('keydown', function (event) {
+            if (event.keyCode == 49) {
+                playMp3(alleSamples[0]);
+            }
+            else if (event.keyCode == 50) {
+                playMp3(alleSamples[1]);
+            }
+            else if (event.keyCode == 51) {
+                playMp3(alleSamples[2]);
+            }
+            else if (event.keyCode == 52) {
+                playMp3(alleSamples[3]);
+            }
+            else if (event.keyCode == 53) {
+                playMp3(alleSamples[4]);
+            }
+            else if (event.keyCode == 54) {
+                playMp3(alleSamples[5]);
+            }
+            else if (event.keyCode == 55) {
+                playMp3(alleSamples[7]);
+            }
+            else if (event.keyCode == 56) {
+                playMp3(alleSamples[8]);
+            }
+            else if (event.keyCode == 57) {
+                playMp3(alleSamples[6]);
+            }
+            ;
+        });
     });
 })(Aufgabe_7 || (Aufgabe_7 = {}));
 //# sourceMappingURL=script_7.js.map
