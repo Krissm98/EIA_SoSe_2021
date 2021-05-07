@@ -176,3 +176,10 @@
 .playButton:active{
     transform: scale(1.2)
 }
+
+.hint{
+    color:black;
+
+}
+.hint:hover{
+    color:white;}
