@@ -61,7 +61,7 @@
     width:150px;
     height:150px;
     margin-top: 155px;
-    background-color:	#ff0281;
+    background-color: 	#2669e6;
     border-radius: 10px;
     cursor: pointer;
     
@@ -69,10 +69,10 @@
 }
 .button4:hover{
     transform: scale(1.02);
-    box-shadow: 0 5px 15px rgba(255, 2, 129, 0.534);
+    box-shadow: 0 5px 15px rgba(0, 101, 253, 0.493);
 }
 .button4:active{
-    background-color: 	#ffc4e8;
+    background-color: 	#00fff2;
 }
 .button5{
     position:absolute;
@@ -113,16 +113,16 @@
     width:150px;
     height:150px;
     margin-top: 310px;
-    background-color:	#ff0281;
+    background-color:#ff8800;
     border-radius: 10px;
     cursor: pointer;
 }
 .button7:hover{
     transform: scale(1.02);
-    box-shadow: 0 5px 15px rgba(255, 2, 129, 0.534);
+    box-shadow: 0 5px 15px rgba(255, 136, 0, 0.534);
 }
 .button7:active{
-    background-color: 	#ffc4e8;
+    background-color: 	#ffd890;
 }
 .button8{
     position:absolute;
@@ -130,16 +130,16 @@
     height:150px;
     margin-left: 155px;
     margin-top: 310px;
-    background-color:#ff8800;
+    background-color:	#ff0281;
     border-radius: 10px;
     cursor: pointer;
 }
 .button8:hover{
     transform: scale(1.02);
-    box-shadow: 0 5px 15px rgba(255, 136, 0, 0.534);
+    box-shadow: 0 5px 15px rgba(255, 2, 129, 0.534);
 }
 .button8:active{
-    background-color: 	#ffd890;
+    background-color: 	#ffc4e8;
 }
 .button9{
     position:absolute;
@@ -147,16 +147,16 @@
     height:150px;
     margin-left:310px;
     margin-top: 310px;
-    background-color:#ff8800;
+    background-color:	#ff0281;
     border-radius: 10px;
     cursor: pointer;
 }
 .button9:hover{
     transform: scale(1.02);
-    box-shadow: 0 5px 15px rgba(255, 136, 0, 0.534);
+    box-shadow: 0 5px 15px rgba(255, 2, 129, 0.534);
 }
 .button9:active{
-    background-color: 	#ffd890;
+    background-color: 	#ffc4e8;
 }
 
 .playButton{

@@ -5,7 +5,7 @@ namespace Aufgabe_7 {
     window.addEventListener("load", function () {
 
         document.body.style.backgroundColor = "black";
-        let alleSamples: HTMLAudioElement[] = [new Audio("assets/kick.mp3"), new Audio("assets/hihat.mp3"), new Audio("assets/snare.mp3"), new Audio("assets/A.mp3"), new Audio("assets/C.mp3"), new Audio("assets/F.mp3"), new Audio("assets/G.mp3"), new Audio("assets/laugh-1.mp3"), new Audio("assets/laugh-2.mp3")];
+        let alleSamples: HTMLAudioElement[] = [new Audio("assets/eigene_Sounds/kick_low.mp3"), new Audio("assets/eigene_Sounds/Lo-Fi_HiHat.mp3"), new Audio("assets/eigene_Sounds/Lo-Fi_Snare.mp3"), new Audio("assets/eigene_Sounds/Ride.mp3"), new Audio("assets/eigene_Sounds/Chord_1_Short.mp3"), new Audio("assets/eigene_Sounds/Chord_2_short.mp3"), new Audio("assets/eigene_Sounds/Chimes.mp3"),  new Audio("assets/eigene_Sounds/Chord_3_fixed.mp3"), new Audio("assets/eigene_Sounds/Trumpet_one_shot.mp3"),];
 
 
         document.querySelector(".button1").addEventListener("click", function () { playMp3(alleSamples[0]) });
