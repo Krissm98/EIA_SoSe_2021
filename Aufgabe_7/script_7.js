@@ -22,6 +22,7 @@ var Aufgabe_7;
         });
         function playMp3(mp3_Sample) {
             if (mp3_Sample === void 0) { mp3_Sample = new Audio; }
+            mp3_Sample.currentTime = 0;
             mp3_Sample.play();
         }
         var drum_Machine = [alleSamples[0], alleSamples[1], alleSamples[2], alleSamples[1]];
