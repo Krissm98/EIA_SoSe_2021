@@ -80,7 +80,7 @@ namespace Aufgabe_7 {
                 playMp3(alleSamples[6]);
 
             };
-            
+
         });
 
 
@@ -88,4 +88,4 @@ namespace Aufgabe_7 {
     });
 
 
-}   
+}
