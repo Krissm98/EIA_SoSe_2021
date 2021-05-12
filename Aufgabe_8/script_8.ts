@@ -1,4 +1,4 @@
-namespace Aufgabe_7 {
+namespace Aufgabe_8 {
 
 
 
@@ -6,8 +6,8 @@ namespace Aufgabe_7 {
 
         document.body.style.backgroundColor = "#000000";
         let alleSamples: HTMLAudioElement[] = [new Audio("assets/eigene_Sounds/kick_low.mp3"), new Audio("assets/eigene_Sounds/Lo-Fi_HiHat.mp3"), new Audio("assets/eigene_Sounds/Lo-Fi_Snare.mp3"), new Audio("assets/eigene_Sounds/Ride.mp3"), new Audio("assets/eigene_Sounds/Chord_1_Short.mp3"), new Audio("assets/eigene_Sounds/Chord_2_short.mp3"), new Audio("assets/eigene_Sounds/Chimes.mp3"), new Audio("assets/eigene_Sounds/Chord_3_fixed.mp3"), new Audio("assets/eigene_Sounds/Trumpet_one_shot.mp3")];
-        
-        let drumMachine: HTMLAudioElement[] = [alleSamples[0], alleSamples[1], alleSamples[2], alleSamples[1]]
+
+        let drumMachine: HTMLAudioElement[] = [alleSamples[0], alleSamples[1], alleSamples[2], alleSamples[1]];
 
         let drumPlaying: number = 0;
 
@@ -21,8 +21,10 @@ namespace Aufgabe_7 {
         document.querySelector(".button8").addEventListener("click", function (): void { playMp3(alleSamples[7]); });
         document.querySelector(".button9").addEventListener("click", function (): void { playMp3(alleSamples[8]); });
 
-        document.querySelector(".playButton").addEventListener("click", function (): void {
+        document.querySelector("#play_Button").addEventListener("click", function (): void {
+         
             setInterval(function machine_single(): void {
+
 
 
                 drumMachine[drumPlaying].play();
@@ -37,17 +39,48 @@ namespace Aufgabe_7 {
 
 
 
-            },          500);
+
+            },          500); 
+        });
+
+        document.querySelector("#stopp_Button").addEventListener("click", function (): void {
+
+
+            clearInterval()
+
+
+
+
         });
 
 
 
 
-        function playMp3 (mp3Sample = new Audio) {
+
+
+
+        function playMp3(mp3Sample = new Audio) {
 
             mp3Sample.currentTime = 0;
             mp3Sample.play();
         }
+
+
+        document.getElementById("play_Button").addEventListener("click", function (): void {
+            document.getElementById("play_Button").classList.add("is-hidden");
+            document.getElementById("stopp_Button").classList.remove("is-hidden");
+
+
+
+        });
+        document.getElementById("stopp_Button").addEventListener("click", function (): void {
+            document.getElementById("stopp_Button").classList.add("is-hidden");
+            document.getElementById("play_Button").classList.remove("is-hidden");
+        });
+
+
+
+
 
 
 
@@ -79,7 +112,7 @@ namespace Aufgabe_7 {
             else if (event.keyCode == 57) {
                 playMp3(alleSamples[6]);
 
-            };
+            }
 
         });
 
@@ -88,4 +121,8 @@ namespace Aufgabe_7 {
     });
 
 
+}
+
+function Interval(Interval: any) {
+    throw new Error("Function not implemented.");
 }

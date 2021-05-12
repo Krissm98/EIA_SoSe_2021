@@ -1,0 +1,317 @@
+.drumMashine {
+    position: relative;
+    margin: 0 auto;
+    height: 460px;
+    width: 460px;
+    background-color: black;
+    top: 20px;
+}
+
+.button1 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #2669e6;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button1:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 101, 253, 0.493);
+}
+
+.button1:active {
+    background-color: #00fff2;
+}
+
+.button2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 155px;
+    background-color: #2669e6;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button2:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 101, 253, 0.493);
+}
+
+.button2:active {
+    background-color: #00fff2;
+}
+
+.button3 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 310px;
+    background-color: #2669e6;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button3:active {
+    background-color: #00fff2;
+}
+
+.button3:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 101, 253, 0.493);
+}
+
+.button4 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-top: 155px;
+    background-color: #2669e6;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button4:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 101, 253, 0.493);
+}
+
+.button4:active {
+    background-color: #00fff2;
+}
+
+.button5 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 155px;
+    margin-top: 155px;
+    background-color: #ff0281;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button5:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(255, 2, 129, 0.534);
+}
+
+.button5:active {
+    background-color: #ffc4e8;
+}
+
+.button6 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 310px;
+    margin-top: 155px;
+    background-color: #ff0281;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button6:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(255, 2, 129, 0.534);
+}
+
+.button6:active {
+    background-color: #ffc4e8;
+}
+
+.button7 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-top: 310px;
+    background-color: #ff8800;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button7:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(255, 136, 0, 0.534);
+}
+
+.button7:active {
+    background-color: #ffd890;
+}
+
+.button8 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 155px;
+    margin-top: 310px;
+    background-color: #ff0281;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button8:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(255, 2, 129, 0.534);
+}
+
+.button8:active {
+    background-color: #ffc4e8;
+}
+
+.button9 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 310px;
+    margin-top: 310px;
+    background-color: #ff0281;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button9:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(255, 2, 129, 0.534);
+}
+
+.button9:active {
+    background-color: #ffc4e8;
+}
+
+#play_Button {
+    position: absolute;
+    bottom: -170px;
+    text-align: center;
+    font-size: 100px;
+    cursor: pointer;
+    color: white;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+#play_Button:hover {
+    transform: scale(1.10);
+}
+
+#play_Button:active {
+    transform: scale(1.2)
+}
+
+#stopp_Button {
+    position: absolute;
+    bottom: -170px;
+    text-align: center;
+    font-size: 100px;
+    cursor: pointer;
+    color: white;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+#stopp_Button:hover {
+    transform: scale(1.10);
+}
+
+#stopp_Button:active {
+    transform: scale(1.2)
+}
+
+#delete_Button {
+    position: absolute;
+    bottom: -170px;
+    text-align: center;
+    font-size: 100px;
+    cursor: pointer;
+    color: white;
+    width: 100px;
+    right: 30px;
+    margin-left: -50px;
+}
+
+#delete_Button:hover {
+    transform: scale(1.10);
+}
+
+#delete_Button:active {
+    transform: scale(1.2)
+}
+
+#remix_Button {
+    position: absolute;
+    bottom: -170px;
+    text-align: center;
+    font-size: 100px;
+    cursor: pointer;
+    color: white;
+    width: 100px;
+    left: 80px;
+    margin-left: -50px;
+}
+
+#remix_Button:hover {
+    transform: scale(1.10);
+}
+
+#remix_Button:active {
+    transform: scale(1.2)
+}
+
+#remix_Text {
+    color: white;
+    position: absolute;
+    bottom: -240px;
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+    cursor: pointer;
+    color: white;
+    width: 100px;
+    left: 80px;
+    margin-left: -50px;
+}
+
+#playAndStop_Text {
+    color: white;
+    position: absolute;
+    bottom: -240px;
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+    cursor: pointer;
+    color: white;
+    width: 100px;
+    left: 50%;
+    margin-left: -70px;
+}
+
+#delete_Text {
+    color: white;
+    position: absolute;
+    bottom: -240px;
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+    cursor: pointer;
+    color: white;
+    width: 100px;
+    right: 30px;
+    margin-left: -50px;
+}
+
+.hint {
+    color: black;
+    font-family: fantasy;
+}
+
+.hint:hover {
+    color: white;
+}
+
+.is-hidden {
+    display: none !important;
+}
