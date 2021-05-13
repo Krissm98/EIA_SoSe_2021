@@ -15,15 +15,15 @@ var Aufgabe_8;
         document.querySelector(".button8").addEventListener("click", function () { playMp3(alleSamples[7]); });
         document.querySelector(".button9").addEventListener("click", function () { playMp3(alleSamples[8]); });
         document.querySelector("#play_Button").addEventListener("click", function () {
-            setInterval(function machine_single() {
-                drumMachine[drumPlaying].play();
+            var myInterval = setInterval(function machine_single() {
+                playMp3(drumMachine[drumPlaying]);
                 drumPlaying += 1;
                 if (drumPlaying > 3)
                     drumPlaying = 0;
+                document.querySelector("#stopp_Button").addEventListener("click", function () {
+                    clearInterval(myInterval);
+                });
             }, 500);
-        });
-        document.querySelector("#stopp_Button").addEventListener("click", function () {
-            clearInterval();
         });
         function playMp3(mp3Sample) {
             if (mp3Sample === void 0) { mp3Sample = new Audio; }
@@ -69,7 +69,4 @@ var Aufgabe_8;
         });
     });
 })(Aufgabe_8 || (Aufgabe_8 = {}));
-function Interval(Interval) {
-    throw new Error("Function not implemented.");
-}
 //# sourceMappingURL=script_8.js.map

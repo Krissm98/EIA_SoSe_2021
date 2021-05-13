@@ -21,37 +21,36 @@ namespace Aufgabe_8 {
         document.querySelector(".button8").addEventListener("click", function (): void { playMp3(alleSamples[7]); });
         document.querySelector(".button9").addEventListener("click", function (): void { playMp3(alleSamples[8]); });
 
-        document.querySelector("#play_Button").addEventListener("click", function (): void {
-         
-            setInterval(function machine_single(): void {
+        document.querySelector("#play_Button").addEventListener("click", function (): void { 
 
-
-
-                drumMachine[drumPlaying].play();
+            var myInterval: number = setInterval(function machine_single(): void {
+                
+                
+                playMp3(
+                
+                drumMachine[drumPlaying]);
 
                 drumPlaying += 1;
 
                 if (drumPlaying > 3)
                     drumPlaying = 0;
+                
+
+                document.querySelector("#stopp_Button").addEventListener("click", function (): void {
+
+
+                    clearInterval(myInterval);
 
 
 
 
+                });
 
 
-
-            },          500); 
+            },                                   500);
         });
 
-        document.querySelector("#stopp_Button").addEventListener("click", function (): void {
 
-
-            clearInterval()
-
-
-
-
-        });
 
 
 
@@ -123,6 +122,4 @@ namespace Aufgabe_8 {
 
 }
 
-function Interval(Interval: any) {
-    throw new Error("Function not implemented.");
-}
+
