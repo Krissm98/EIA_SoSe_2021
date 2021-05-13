@@ -7,9 +7,9 @@ namespace Aufgabe_8 {
         document.body.style.backgroundColor = "#000000";
         let alleSamples: HTMLAudioElement[] = [new Audio("assets/eigene_Sounds/kick_low.mp3"), new Audio("assets/eigene_Sounds/Lo-Fi_HiHat.mp3"), new Audio("assets/eigene_Sounds/Lo-Fi_Snare.mp3"), new Audio("assets/eigene_Sounds/Ride.mp3"), new Audio("assets/eigene_Sounds/Chord_1_Short.mp3"), new Audio("assets/eigene_Sounds/Chord_2_short.mp3"), new Audio("assets/eigene_Sounds/Chimes.mp3"), new Audio("assets/eigene_Sounds/Chord_3_fixed.mp3"), new Audio("assets/eigene_Sounds/Trumpet_one_shot.mp3")];
 
-        let drumMachine: HTMLAudioElement[] = [alleSamples[0], alleSamples[1], alleSamples[2], alleSamples[1]];
+        
 
-        let drumPlaying: number = 0;
+        let index: number = 0;
 
         document.querySelector(".button1").addEventListener("click", function (): void { playMp3(alleSamples[0]); });
         document.querySelector(".button2").addEventListener("click", function (): void { playMp3(alleSamples[1]); });
@@ -21,20 +21,22 @@ namespace Aufgabe_8 {
         document.querySelector(".button8").addEventListener("click", function (): void { playMp3(alleSamples[7]); });
         document.querySelector(".button9").addEventListener("click", function (): void { playMp3(alleSamples[8]); });
 
-        document.querySelector("#play_Button").addEventListener("click", function (): void { 
+        document.querySelector("#play_Button").addEventListener("click", function (): void {
 
             var myInterval: number = setInterval(function machine_single(): void {
-                
-                
+
+
                 playMp3(
-                
-                drumMachine[drumPlaying]);
 
-                drumPlaying += 1;
+                    alleSamples[index]);
 
-                if (drumPlaying > 3)
-                    drumPlaying = 0;
+                index += 1;
+
+               
                 
+                if (index > 3) 
+                    index = 0; 
+
 
                 document.querySelector("#stopp_Button").addEventListener("click", function (): void {
 
@@ -47,9 +49,9 @@ namespace Aufgabe_8 {
                 });
 
 
-            },                                   500);
+            }, 500);
         });
-
+      
 
 
 
@@ -76,6 +78,13 @@ namespace Aufgabe_8 {
             document.getElementById("stopp_Button").classList.add("is-hidden");
             document.getElementById("play_Button").classList.remove("is-hidden");
         });
+
+        document.getElementById("delete_Button").addEventListener("click", function (): void {
+
+
+            alleSamples.length = 0;
+            });
+    
 
 
 
