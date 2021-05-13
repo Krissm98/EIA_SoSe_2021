@@ -24,6 +24,13 @@ var Aufgabe_8;
                 });
             }, 500);
         });
+        document.getElementById("remix_Button").addEventListener("click", function () {
+            var myInterval2 = setInterval(function remix() {
+                playMp3(alleSamples[index]);
+                index = Math.floor(Math.random() * 9);
+                console.log(index);
+            }, 500);
+        });
         function playMp3(mp3Sample) {
             if (mp3Sample === void 0) { mp3Sample = new Audio; }
             mp3Sample.currentTime = 0;

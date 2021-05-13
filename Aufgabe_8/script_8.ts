@@ -7,7 +7,7 @@ namespace Aufgabe_8 {
         document.body.style.backgroundColor = "#000000";
         let alleSamples: HTMLAudioElement[] = [new Audio("assets/eigene_Sounds/kick_low.mp3"), new Audio("assets/eigene_Sounds/Lo-Fi_HiHat.mp3"), new Audio("assets/eigene_Sounds/Lo-Fi_Snare.mp3"), new Audio("assets/eigene_Sounds/Ride.mp3"), new Audio("assets/eigene_Sounds/Chord_1_Short.mp3"), new Audio("assets/eigene_Sounds/Chord_2_short.mp3"), new Audio("assets/eigene_Sounds/Chimes.mp3"), new Audio("assets/eigene_Sounds/Chord_3_fixed.mp3"), new Audio("assets/eigene_Sounds/Trumpet_one_shot.mp3")];
 
-        
+
 
         let index: number = 0;
 
@@ -32,10 +32,10 @@ namespace Aufgabe_8 {
 
                 index += 1;
 
-               
-                
-                if (index > 3) 
-                    index = 0; 
+
+
+                if (index > 3)
+                    index = 0;
 
 
                 document.querySelector("#stopp_Button").addEventListener("click", function (): void {
@@ -47,11 +47,41 @@ namespace Aufgabe_8 {
 
 
                 });
+                
 
 
             }, 500);
+
+
+
+
+
+
+
+
+
+
+            
         });
-      
+
+        document.getElementById("remix_Button").addEventListener("click", function (): void {
+
+           
+
+            var myInterval2: number = setInterval(function remix(): void {
+
+                playMp3(
+
+                    alleSamples[index]);
+
+                index = Math.floor(Math.random() * 9) ;
+           
+                console.log(index);
+           
+            }, 500);
+
+        });
+
 
 
 
@@ -83,8 +113,10 @@ namespace Aufgabe_8 {
 
 
             alleSamples.length = 0;
-            });
-    
+        });
+
+      
+
 
 
 
