@@ -28,7 +28,7 @@ var Aufgabe_8;
             var myInterval2 = setInterval(function remix() {
                 playMp3(alleSamples[index]);
                 index = Math.floor(Math.random() * 9);
-                console.log(index);
+                console.log(index + "Zufall");
             }, 500);
         });
         function playMp3(mp3Sample) {

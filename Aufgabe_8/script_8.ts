@@ -23,6 +23,7 @@ namespace Aufgabe_8 {
 
         document.querySelector("#play_Button").addEventListener("click", function (): void {
 
+            
             var myInterval: number = setInterval(function machine_single(): void {
 
 
@@ -30,7 +31,8 @@ namespace Aufgabe_8 {
 
                     alleSamples[index]);
 
-                index += 1;
+                
+                    index += 1;
 
 
 
@@ -76,7 +78,7 @@ namespace Aufgabe_8 {
 
                 index = Math.floor(Math.random() * 9) ;
            
-                console.log(index);
+                console.log(index + "Zufall");
            
             }, 500);
 
