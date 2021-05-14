@@ -29,6 +29,9 @@ var Aufgabe_8;
                 playMp3(alleSamples[index]);
                 index = Math.floor(Math.random() * 9);
                 console.log(index + "Zufall");
+                document.querySelector("#stopp_Button_2").addEventListener("click", function () {
+                    clearInterval(myInterval2);
+                });
             }, 500);
         });
         function playMp3(mp3Sample) {
@@ -43,6 +46,14 @@ var Aufgabe_8;
         document.getElementById("stopp_Button").addEventListener("click", function () {
             document.getElementById("stopp_Button").classList.add("is-hidden");
             document.getElementById("play_Button").classList.remove("is-hidden");
+        });
+        document.getElementById("remix_Button").addEventListener("click", function () {
+            document.getElementById("remix_Button").classList.add("is-hidden");
+            document.getElementById("stopp_Button_2").classList.remove("is-hidden");
+        });
+        document.getElementById("stopp_Button_2").addEventListener("click", function () {
+            document.getElementById("stopp_Button_2").classList.add("is-hidden");
+            document.getElementById("remix_Button").classList.remove("is-hidden");
         });
         document.getElementById("delete_Button").addEventListener("click", function () {
             alleSamples.length = 0;

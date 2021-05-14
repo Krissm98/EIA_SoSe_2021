@@ -221,6 +221,26 @@
     transform: scale(1.2)
 }
 
+#stopp_Button_2 {
+    position: absolute;
+    bottom: -170px;
+    text-align: center;
+    font-size: 100px;
+    cursor: pointer;
+    color: white;
+    width: 100px;
+    left: 80px;
+    margin-left: -50px;
+}
+
+#stopp_Button_2:hover {
+    transform: scale(1.10);
+}
+
+#stopp_Button_2:active {
+    transform: scale(1.2)
+}
+
 #delete_Button {
     position: absolute;
     bottom: -170px;

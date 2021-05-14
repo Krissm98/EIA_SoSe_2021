@@ -9,7 +9,7 @@ namespace Aufgabe_8 {
 
 
 
-        let index: number = 0;
+            let index: number = 0;
 
         document.querySelector(".button1").addEventListener("click", function (): void { playMp3(alleSamples[0]); });
         document.querySelector(".button2").addEventListener("click", function (): void { playMp3(alleSamples[1]); });
@@ -23,7 +23,7 @@ namespace Aufgabe_8 {
 
         document.querySelector("#play_Button").addEventListener("click", function (): void {
 
-            
+
             var myInterval: number = setInterval(function machine_single(): void {
 
 
@@ -31,8 +31,8 @@ namespace Aufgabe_8 {
 
                     alleSamples[index]);
 
-                
-                    index += 1;
+
+                index += 1;
 
 
 
@@ -49,7 +49,7 @@ namespace Aufgabe_8 {
 
 
                 });
-                
+
 
 
             }, 500);
@@ -63,12 +63,12 @@ namespace Aufgabe_8 {
 
 
 
-            
+
         });
 
         document.getElementById("remix_Button").addEventListener("click", function (): void {
 
-           
+
 
             var myInterval2: number = setInterval(function remix(): void {
 
@@ -76,10 +76,20 @@ namespace Aufgabe_8 {
 
                     alleSamples[index]);
 
-                index = Math.floor(Math.random() * 9) ;
-           
+                index = Math.floor(Math.random() * 9);
+
                 console.log(index + "Zufall");
-           
+
+                document.querySelector("#stopp_Button_2").addEventListener("click", function (): void {
+
+
+                    clearInterval(myInterval2);
+
+
+
+
+                });
+
             }, 500);
 
         });
@@ -87,7 +97,7 @@ namespace Aufgabe_8 {
 
 
 
-
+  
 
 
 
@@ -111,13 +121,24 @@ namespace Aufgabe_8 {
             document.getElementById("play_Button").classList.remove("is-hidden");
         });
 
+        document.getElementById("remix_Button").addEventListener("click", function (): void {
+            document.getElementById("remix_Button").classList.add("is-hidden");
+            document.getElementById("stopp_Button_2").classList.remove("is-hidden");
+        });
+
+        document.getElementById("stopp_Button_2").addEventListener("click", function (): void {
+            document.getElementById("stopp_Button_2").classList.add("is-hidden");
+            document.getElementById("remix_Button").classList.remove("is-hidden");
+        });
+
+
         document.getElementById("delete_Button").addEventListener("click", function (): void {
 
 
             alleSamples.length = 0;
         });
 
-      
+
 
 
 
