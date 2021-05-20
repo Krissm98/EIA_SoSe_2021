@@ -7,11 +7,16 @@ var Aufgabe_9;
                 text: document.getElementById("textFeldTd").value,
                 checkmark: false
             };
-            toDoArray.unshift(toDoItem);
+            toDoArray.push(toDoItem);
             for (var i = 0; i < toDoArray.length; i++) {
+                if (i == 0) {
+                    var clear = document.getElementById("toDoListItem");
+                    clear.innerHTML = "";
+                }
+                var toDoListItem = document.getElementById("toDoListItem");
                 var div = document.createElement("div");
-                div.textContent = toDoArray[0].text;
-                document.body.appendChild(div);
+                div.textContent = toDoArray[i].text;
+                toDoListItem === null || toDoListItem === void 0 ? void 0 : toDoListItem.appendChild(div);
             }
             console.log(toDoArray);
         });
