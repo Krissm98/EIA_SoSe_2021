@@ -16,12 +16,13 @@ namespace Aufgabe_9 {
         ];
 
         document.querySelector(".enter").addEventListener("click", function (): void {
+            
             let toDoItem: ToDoBlocks = {
-                text: "NeuesItem",
+                text: (<HTMLInputElement>document.getElementById("textFeldTd")).value,
                 checkmark: false
             };
 
-            toDoArray.push(toDoItem);
+            toDoArray.unshift(toDoItem);
             for (let i: number = 0; i < toDoArray.length; i++) {
                
 
@@ -29,11 +30,17 @@ namespace Aufgabe_9 {
 
                 let div: HTMLDivElement =
                     document.createElement("div");
+                   
+
+               
+                
+
+                div.textContent = toDoArray[0].text;
+                document.body.appendChild(div);
+               
 
 
 
-
-                div.textContent = toDoArray[i].text;
 
 
 

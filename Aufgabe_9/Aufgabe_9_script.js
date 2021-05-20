@@ -4,13 +4,14 @@ var Aufgabe_9;
         var toDoArray = [];
         document.querySelector(".enter").addEventListener("click", function () {
             var toDoItem = {
-                text: "NeuesItem",
+                text: document.getElementById("textFeldTd").value,
                 checkmark: false
             };
-            toDoArray.push(toDoItem);
+            toDoArray.unshift(toDoItem);
             for (var i = 0; i < toDoArray.length; i++) {
                 var div = document.createElement("div");
-                div.textContent = toDoArray[i].text;
+                div.textContent = toDoArray[0].text;
+                document.body.appendChild(div);
             }
             console.log(toDoArray);
         });
