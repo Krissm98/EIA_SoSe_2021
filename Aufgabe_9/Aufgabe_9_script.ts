@@ -11,23 +11,19 @@ namespace Aufgabe_9 {
         }
 
         let toDoArray: ToDoBlocks[] = [
-            {
-                text: "Hallo",
-                checkmark: false
-            }
-
-
+           
 
         ];
 
         document.querySelector(".enter").addEventListener("click", function (): void {
-            for (let i: number = 0; i < toDoArray.length; i++) {
-                let toDoItem: ToDoBlocks = {
-                    text: "NeuesItem",
-                    checkmark: false
-                };
+            let toDoItem: ToDoBlocks = {
+                text: "NeuesItem",
+                checkmark: false
+            };
 
-                toDoArray.push(toDoItem);
+            toDoArray.push(toDoItem);
+            for (let i: number = 0; i < toDoArray.length; i++) {
+               
 
 
 
@@ -37,7 +33,7 @@ namespace Aufgabe_9 {
 
 
 
-                div.textContent = toDoArray[0].text;
+                div.textContent = toDoArray[i].text;
 
 
 

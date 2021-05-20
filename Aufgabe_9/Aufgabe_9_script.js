@@ -1,21 +1,16 @@
 var Aufgabe_9;
 (function (Aufgabe_9) {
     window.addEventListener("load", function () {
-        var toDoArray = [
-            {
-                text: "Hallo",
-                checkmark: false
-            }
-        ];
+        var toDoArray = [];
         document.querySelector(".enter").addEventListener("click", function () {
+            var toDoItem = {
+                text: "NeuesItem",
+                checkmark: false
+            };
+            toDoArray.push(toDoItem);
             for (var i = 0; i < toDoArray.length; i++) {
-                var toDoItem = {
-                    text: "NeuesItem",
-                    checkmark: false
-                };
-                toDoArray.push(toDoItem);
                 var div = document.createElement("div");
-                div.textContent = toDoArray[0].text;
+                div.textContent = toDoArray[i].text;
             }
             console.log(toDoArray);
         });
