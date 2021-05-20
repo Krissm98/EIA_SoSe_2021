@@ -53,3 +53,12 @@ h2 {
 .enter:active{
     transform: scale(1.5);
 }
+
+.newToDo{
+    background-color: blanchedalmond;
+    height:fit-content;
+    width:fit-content;
+    border-style: solid;
+    border-width:1px;
+    border-color: black;
+}
