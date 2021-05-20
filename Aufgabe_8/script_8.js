@@ -28,7 +28,6 @@ var Aufgabe_8;
             var myInterval2 = setInterval(function remix() {
                 playMp3(alleSamples[index]);
                 index = Math.floor(Math.random() * 9);
-                console.log(index + "Zufall");
                 document.querySelector("#stopp_Button_2").addEventListener("click", function () {
                     clearInterval(myInterval2);
                 });

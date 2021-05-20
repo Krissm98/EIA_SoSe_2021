@@ -9,7 +9,7 @@ namespace Aufgabe_8 {
 
 
 
-            let index: number = 0;
+        let index: number = 0;
 
         document.querySelector(".button1").addEventListener("click", function (): void { playMp3(alleSamples[0]); });
         document.querySelector(".button2").addEventListener("click", function (): void { playMp3(alleSamples[1]); });
@@ -36,8 +36,15 @@ namespace Aufgabe_8 {
 
 
 
+                
+                
                 if (index > 3)
                     index = 0;
+
+                
+
+                
+
 
 
                 document.querySelector("#stopp_Button").addEventListener("click", function (): void {
@@ -78,7 +85,7 @@ namespace Aufgabe_8 {
 
                 index = Math.floor(Math.random() * 9);
 
-                console.log(index + "Zufall");
+
 
                 document.querySelector("#stopp_Button_2").addEventListener("click", function (): void {
 
@@ -97,7 +104,7 @@ namespace Aufgabe_8 {
 
 
 
-  
+
 
 
 

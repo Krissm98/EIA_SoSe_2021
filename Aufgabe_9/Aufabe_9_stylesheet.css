@@ -1,0 +1,55 @@
+body {
+    max-width:400px;
+    margin: auto;
+}
+h1 {
+    text-align:center;
+    font-family: fantasy;
+}
+h2 {
+    text-align:center;
+    font-family: fantasy;
+    color:grey;
+}
+.textFeldTd{
+    margin:auto;
+    width: 300px;
+    
+
+
+}
+
+.wrapper{
+    width: 400px;
+    height: 50px; 
+}
+.trash_Icon{
+    opacity:20%;
+
+
+}
+.trash_Icon:hover {
+    transform: scale(1.4);
+    color:grey;
+    opacity:100%;
+
+
+}
+.trash_Icon:active{
+    transform: scale(1.5);
+}
+
+.enter  {
+    opacity:20%;
+
+}
+.enter:hover {
+    transform: scale(1.4);
+    color:grey;
+    opacity:100%;
+
+
+}
+.enter:active{
+    transform: scale(1.5);
+}
