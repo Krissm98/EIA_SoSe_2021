@@ -1,6 +1,8 @@
 body {
     max-width:400px;
     margin: auto;
+    background-color: blanchedalmond;
+  
     
 }
 h1 {
@@ -11,6 +13,9 @@ h2 {
     text-align:center;
     font-family: fantasy;
     color:grey;
+    border:dotted;
+    border-color:black;
+    
 }
 #textFeldTd{
     margin: 0 auto;
@@ -71,6 +76,7 @@ h2 {
     height: 193px;
     word-wrap: break-word;
     font-family: cursive;
+    border-bottom-left-radius: 80px;
     
     
 }
