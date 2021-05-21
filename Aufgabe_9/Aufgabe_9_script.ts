@@ -32,7 +32,7 @@ namespace Aufgabe_9 {
             zaehler = zaehler + 1;
             document.querySelector("#zaehlerNr").innerHTML = zaehler.toString();
 
-            const clear = document.getElementById("toDoListItem");
+            const clear: HTMLElement = document.getElementById("toDoListItem");
             clear.innerHTML = ``;
 
             for (let i: number = 0; i < toDoArray.length; i++) {
