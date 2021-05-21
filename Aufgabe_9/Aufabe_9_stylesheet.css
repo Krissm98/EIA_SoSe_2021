@@ -61,4 +61,9 @@ h2 {
     border-style: solid;
     border-width:1px;
     border-color: black;
+    
+}
+
+.isHidden {
+    display: none !important;
 }
