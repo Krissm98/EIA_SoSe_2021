@@ -16,7 +16,6 @@ h2 {
     border:dotted;
     border-color:black;
     
-    
 }
 #textFeldTd{
     margin: 0 auto;
@@ -34,11 +33,7 @@ h2 {
 
 }
 
-.wrapper{
-    width: 400px;
-    height: 50px; 
-   
-}
+
 .trash_Icon{
     opacity:20%;
 
