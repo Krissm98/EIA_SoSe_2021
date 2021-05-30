@@ -11,8 +11,8 @@
  * Werte, bspw. Stelle 0 im Array todosText und Stelle 0 im Array
  * todosChecked gehören zusammen zu einem ToDo.
  */
-var Aufgabe_10;
-(function (Aufgabe_10) {
+var Aufgabe_11;
+(function (Aufgabe_11) {
     var toDoArray = [];
     /**
      * Die Anwendung wird immer wieder auf die selben
@@ -25,6 +25,8 @@ var Aufgabe_10;
     var addButtonDOMElement;
     var todosDOMElement;
     var counterDOMElement;
+    var counterDOMElementOpen;
+    var counterDOMElementDone;
     /**
      * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
      * initialisiert werden
@@ -39,6 +41,8 @@ var Aufgabe_10;
         addButtonDOMElement = document.querySelector("#addButton");
         todosDOMElement = document.querySelector("#todos");
         counterDOMElement = document.querySelector("#counter");
+        counterDOMElementOpen = document.querySelector("#open");
+        counterDOMElementDone = document.querySelector("#done");
         /**
          * Jetzt da der DOM verfügbar ist kann auch ein Event-Listener
          * auf den AddToDo Button gesetzt werden.
@@ -92,9 +96,27 @@ var Aufgabe_10;
             _loop_1(index);
         }
         updateCounter();
+        updateCounteropen();
+        updateCounterDone();
     }
     function updateCounter() {
         counterDOMElement.innerHTML = toDoArray.length + " in total";
+    }
+    function updateCounteropen() {
+        var counterOpen = 0;
+        for (var index = 0; index < toDoArray.length; index++) {
+            if (toDoArray[index].todosChecked == false)
+                counterOpen++;
+        }
+        counterDOMElementOpen.innerHTML = counterOpen + " open,";
+    }
+    function updateCounterDone() {
+        var counterDone = 0;
+        for (var index = 0; index < toDoArray.length; index++) {
+            if (toDoArray[index].todosChecked == true)
+                counterDone++;
+        }
+        counterDOMElementDone.innerHTML = counterDone + " done";
     }
     /**
      * Ein neues ToDo wird folgendermaßen erstellt:
@@ -167,5 +189,5 @@ var Aufgabe_10;
          */
         drawListToDOM();
     }
-})(Aufgabe_10 || (Aufgabe_10 = {}));
+})(Aufgabe_11 || (Aufgabe_11 = {}));
 //# sourceMappingURL=script.js.map

@@ -12,16 +12,17 @@
  * todosChecked gehören zusammen zu einem ToDo.
  */
 
+namespace Aufgabe_10 {
 
 interface ToDoObject {
     todosText: string;
     todosChecked: boolean;
 }
 
-let toDoArray: ToDoObject [] =
-[
+let toDoArray: ToDoObject[] =
+    [
 
-];
+    ];
 /**
  * Die Anwendung wird immer wieder auf die selben
  * DOM-Elemente zugreifen müssen. Damit diese Elemente nicht 
@@ -38,7 +39,7 @@ var counterDOMElement: HTMLElement;
  * Sobald der DOM geladen wurde können grundlegende DOM-Interaktionen
  * initialisiert werden
  */
-window.addEventListener("load", function(): void {
+window.addEventListener("load", function (): void {
 
     /**
      * Jetzt da der DOM verfügbar ist können die wichtigsten Elemente
@@ -87,17 +88,17 @@ function drawListToDOM(): void {
          * ein Wert einer Variablen benötigt (bspw. für die CSS Klasse oder für den ToDo-Text),
          * hier muss die Zeichenkette unterbrochen werden.
          */
-        todo.innerHTML =  "<span class='check " + toDoArray[index].todosChecked + "'><i class='fas fa-check'></i></span>"
-                            + toDoArray[index].todosText +
-                            "<span class='trash fas fa-trash-alt'></span>";
+        todo.innerHTML = "<span class='check " + toDoArray[index].todosChecked + "'><i class='fas fa-check'></i></span>"
+            + toDoArray[index].todosText +
+            "<span class='trash fas fa-trash-alt'></span>";
 
         // Zuweisen der Event-Listener für den Check- und den Trash-Button
-        todo.querySelector(".check").addEventListener("click", function(): void {
+        todo.querySelector(".check").addEventListener("click", function (): void {
             // hier wird der Index, also die aktuelle Stelle im Array dieses ToDos,
             // übergeben, damit an der entsprechenden Stelle im Array der Wert geändert werden kann.
             toggleCheckState(index);
         });
-        todo.querySelector(".trash").addEventListener("click", function(): void {
+        todo.querySelector(".trash").addEventListener("click", function (): void {
             // hier wird der Index, also die aktuelle Stelle im Array dieses ToDos,
             // übergeben, damit die entsprechende Stelle im Array gelöscht werden kann.
             deleteTodo(index);
@@ -132,12 +133,13 @@ function addTodo(): void {
          * der Status "unchecked", hier false, gepusht.
          */
         toDoArray.unshift({
-            
+
             todosText: inputDOMElement.value,
-        
-        
-            todosChecked: false});
-        
+
+
+            todosChecked: false
+        });
+
         // Jetzt wird der Text aus dem Eingabefeld gelöscht
         inputDOMElement.value = "";
 
@@ -187,11 +189,11 @@ function deleteTodo(index: number): void {
      * das ToDo-Text-Array und das Checked/Unchecked-Array
      */
     toDoArray.splice(index, 1);
-   
-    
+
+
     /**
      * Die zentrale Funktion, um die Liste des ToDo-Arrays in den DOM zu rendern
      * wird wieder getriggert
      */
     drawListToDOM();
-}
+}}
