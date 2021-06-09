@@ -28,7 +28,7 @@ var Aufgabe_11;
     window.addEventListener("load", function () {
         var artyom = new Artyom();
         artyom.addCommands({
-            indexes: ["erstelle eine Aufgabe *"],
+            indexes: ["Artyom erstelle eine Aufgabe *"],
             smart: true,
             action: function (i, wildcard) {
                 console.log("Neue Aufgabe wird erstellt: " + wildcard);
@@ -50,7 +50,7 @@ var Aufgabe_11;
                     interimResults: true,
                     debug: true
                 }).then(function () {
-                    artyom.say("Sage erstelle eine Aufgabe");
+                    artyom.say("Sage Artyom erstelle eine Aufgabe");
                     console.log("Ich bin bereit");
                 });
             }, 200);

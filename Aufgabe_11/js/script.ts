@@ -46,7 +46,7 @@ namespace Aufgabe_11 {
         const artyom: any = new Artyom();
 
         artyom.addCommands({
-            indexes: ["erstelle eine Aufgabe *"],
+            indexes: ["Artyom erstelle eine Aufgabe *"],
             smart: true,
             action: function (i: any, wildcard: string): void {
                 console.log("Neue Aufgabe wird erstellt: " + wildcard);
@@ -75,7 +75,7 @@ namespace Aufgabe_11 {
                         debug: true
 
                     }).then(function (): void {
-                        artyom.say("Sage erstelle eine Aufgabe");
+                        artyom.say("Sage Artyom erstelle eine Aufgabe");
 
 
 
