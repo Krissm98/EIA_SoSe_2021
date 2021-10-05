@@ -14,7 +14,9 @@ namespace Aufgabe_9 {
 
 
         ];
-
+        
+        
+        
 
         document.querySelector(".enter").addEventListener("click", function (): void {
 

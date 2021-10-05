@@ -36,14 +36,14 @@ namespace Aufgabe_8 {
 
 
 
-                
-                
+
+
                 if (index > 3)
                     index = 0;
 
-                
 
-                
+
+
 
 
 
